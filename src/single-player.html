@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta content="Clederson Cruz" name="author" />
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link type="text/css" rel="stylesheet" href="./assets/style.css" />
+		<script type="text/javascript" src="./assets/script.js"></script>
+		<title>Single Player - Computer</title>
+	</head>
+	<body>
+		<header>
+			<h1>Tic Tac Toe</h1>
+		</header>
+			<br />
+			<p id="message"></p>
+			<br />
+		<table id="tab-tic-tac-toe" cellspacing="0">
+			<tr><td id="00" onclick="clickedCell(this)"></td><td id="01" onclick="clickedCell(this)"></td><td id="02" onclick="clickedCell(this)"></td></tr>
+			<tr><td id="10" onclick="clickedCell(this)"></td><td id="11" onclick="clickedCell(this)"></td><td id="12" onclick="clickedCell(this)"></td></tr>
+			<tr><td id="20" onclick="clickedCell(this)"></td><td id="21" onclick="clickedCell(this)"></td><td id="22" onclick="clickedCell(this)"></td></tr>
+		</table>
+		<br><br>
+		<input type="button" value="Start AI" id="bnt-restart" onclick="restartBnt(this)"/>
+		<br/>
+		<style>
+		.btn {
+		  border: 2px solid black;
+		  border-radius: 5px;
+		  background-color: white;
+		  color: black;
+		  padding: 14px 28px;
+		  font-size: 16px;
+		  cursor: pointer;
+		}
+		
+		/* Green */
+		.success {
+		  border-color: #04AA6D;
+		  color: green;
+		}
+		
+		.success:hover {
+		  background-color: #04AA6D;
+		  color: white;
+		}
+		</style>
+		<a href="index.html" class="btn success">Back To Main Menu</a>
+	</body>
+</html>
